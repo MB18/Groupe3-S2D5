@@ -113,6 +113,8 @@ int main(int argc, const char * argv[]) {
  1,90   	 0,288   	#NOMBRE!	 0,225   	#NOMBRE!	 0,518   	#NOMBRE!	 0,326   	#NOMBRE!	#NOMBRE!	#NOMBRE!	#NOMBRE!
  2,00   																						  											
  PS : #NOMBRE! est une valeur impossible. Ils ont été laissé ici pour des questions d'esthétisme.
+ Variance négative possible donc error.
+ SI error --> renvoyer la valeur d'entrée.
  */
     
     for(int i=0;i<12;i++){
