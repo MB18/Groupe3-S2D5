@@ -1,11 +1,11 @@
 #include <iostream>
-#ifndef COMPOSANT7_H
-#define COMPOSANT7_H
+#ifndef COMPOSANT5_H
+#define COMPOSANT5_H
 
-#ifdef COMPOSANT7_EXPORTS
-	#define COMPOSANT7_INTERFACE __declspec(dllexport)
+#ifdef COMPOSANT5_EXPORTS
+	#define COMPOSANT5_INTERFACE __declspec(dllexport)
 #else
-	#define COMPOSANT7_INTERFACE __declspec(dllimport)
+	#define COMPOSANT5_INTERFACE __declspec(dllimport)
 #endif
 
 
@@ -30,17 +30,17 @@ const string ERROR4="C5 : Matrice de volatilite implicite non calculee";
 
 bool allocateTables = false;
 
-COMPOSANT7_INTERFACE bool findVolatilityData(string filename);
-COMPOSANT7_INTERFACE double findVolatility(double strike, double maturity);
-COMPOSANT7_INTERFACE void deleteMatrix();
-COMPOSANT7_INTERFACE void initMatrix();
-COMPOSANT7_INTERFACE void fillImpliciteVolMatrix();
-COMPOSANT7_INTERFACE void fillIntermediateValueMatrix();
-COMPOSANT7_INTERFACE double nominator(int i, int j);
-COMPOSANT7_INTERFACE double denominator1(int i, int j);
-COMPOSANT7_INTERFACE double denominator2(int i, int j);
-COMPOSANT7_INTERFACE double denominator3(int i, int j);
-COMPOSANT7_INTERFACE void fillLocalVolMatrix();
-COMPOSANT7_INTERFACE string getComponentVersion();
+COMPOSANT5_INTERFACE bool findVolatilityData(string filename);
+COMPOSANT5_INTERFACE double findVolatility(double strike, double maturity);
+COMPOSANT5_INTERFACE void deleteMatrix();
+COMPOSANT5_INTERFACE void initMatrix();
+COMPOSANT5_INTERFACE void fillImpliciteVolMatrix();
+COMPOSANT5_INTERFACE void fillIntermediateValueMatrix();
+COMPOSANT5_INTERFACE double nominator(int i, int j);
+COMPOSANT5_INTERFACE double denominator1(int i, int j);
+COMPOSANT5_INTERFACE double denominator2(int i, int j);
+COMPOSANT5_INTERFACE double denominator3(int i, int j);
+COMPOSANT5_INTERFACE void fillLocalVolMatrix();
+COMPOSANT5_INTERFACE string getComponentVersion();
 
 #endif
