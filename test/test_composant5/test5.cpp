@@ -1,9 +1,10 @@
-#include "composant5.h"
+#include "TEST_COMPOSANT5.h"
 #define WINDOWS_LEAN_AND_MEAN
 #include <Windows.h>
 #include <iostream>
 
 using namespace std;
+
 
 bool initialiseVolatiliteImplicite(double ** matriceVol);
 double ** getMatriceW();
@@ -116,6 +117,8 @@ int main(int argc, const char * argv[]) {
  Variance négative possible donc error.
  SI error --> renvoyer la valeur d'entrée.
  */
+ 	cout << "Test de l'interpolation entre 1.3 et 1.4 pour maturité à 0.2" << endl;
+ 	cout << "Valeur :" << interpolationLineaireVolatiliteLocale(1.35, 0.2);
     
     for(int i=0;i<12;i++){
         delete [] matriceInput1[i];
@@ -126,7 +129,6 @@ int main(int argc, const char * argv[]) {
     delete [] matriceInput1;
     delete [] matriceOutputW;
     delete [] matriceOutputVol;
-    
     
     return 0;
 }

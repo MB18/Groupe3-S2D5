@@ -1,0 +1,10 @@
+-- 23/05 -- 
+Notre groupe a spécifié le composant 5 et a développé le composant 4.
+Vous trouverez donc l'organisation suivante : 
+	VolatiliteD4S5/developpement : 	contient le code que l'on développé, i.e. le composant 4
+	VolatiliteD4S5/publication : 	contient la publication (Debug & Release) du composant que l'on a spécifié
+									i.e. le composant 5 ainsi que le composant 4, au cas ou.
+	VolatiliteD4S5/specifications : contient la spécification du composant 5
+	VolatiliteD4S5/test : 			contient le programme de test du composant5, i.e. test5.cpp.
+									Attention : comme vu avec M.Luu, suite à une incompréhension,
+									il y a 2 dll différents : 1 pour la Release, et 1 pour la partie de test.
